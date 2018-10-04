@@ -39,7 +39,7 @@ while  count < 10 :
 		hrefs = re.findall('href=[\'"]?([^\'" >]+)', req2)
 		for href in hrefs:
 			if 'http' in href:
-				if 'microsoft' not in href:
+				if ('microsoft' not in href) and ('bing' not in href) :
 					parse = urlparse.urlparse(href)
 					urls_array.append(parse.netloc)
 				
