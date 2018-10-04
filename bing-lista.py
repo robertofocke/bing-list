@@ -47,7 +47,7 @@ while  count < 10 :
 
 lista_nueva = []
 for url in urls_array:
-	print 'url: '+url
+	
 	if url not in lista_nueva:
 		lista_nueva.append(url)
 		file=open("listahost.txt","a")
